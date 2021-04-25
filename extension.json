@@ -3,9 +3,10 @@
     "name": "Haskell",
     "organization": "Michael Lee",
     "description": "Haskell syntax highlighting and completion.",
-    "version": "0.1",
+    "version": "1.0",
     "categories": ["languages"],
     "license": "MIT",
+    "repository": "https://github.com/michaelee/nova-haskell",
     "bugs" : {
         "email": "lee@soi2.org"
     }
