@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="literate-haskell">
+    <meta>
+        <name>Literate Haskell</name>
+        <type>compiled</type>
+        <preferred-file-extension>lhs</preferred-file-extension>
+        <parent>haskell</parent>
+    </meta>
+
+    <detectors>
+        <extension priority="1.0">lhs</extension>
+    </detectors>
+
+    <comments>
+        <single>
+            <expression>--</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>{-</expression>
+            </starts-with>
+            <ends-with>
+                <expression>-}</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+
+    <brackets>
+        <pair open="{" close="}" />
+		<pair open="[" close="]" />
+		<pair open="(" close=")" />
+    </brackets>
+
+    <surrounding-pairs>
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+    </surrounding-pairs>
+
+    <scopes>
+        <include syntax="self" collection="code" />
+    </scopes>
+
+    <collections>
+        <collection name="code">
+            <scope name="literate-haskell.code">
+                <starts-with>
+                    <expression>^\s*^></expression>
+                </starts-with>
+                <ends-with>
+                    <expression>(?=^[^>])</expression>
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="keywords"/>
+                    <include syntax="self" collection="comments"/>
+                    <include syntax="self" collection="strings" />
+                </subscopes>
+            </scope>
+            <scope name="literate-haskell.code.block">
+                <starts-with>
+                    <expression>^\\begin{code}</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>^\\end{code}</expression>
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="keywords"/>
+                    <include syntax="self" collection="comments"/>
+                    <include syntax="self" collection="strings" />
+                </subscopes>
+            </scope>
+
+        </collection>
+
+        <!-- Comments -->
+        <collection name="comments">
+            <scope name="literate-haskell.comment.single" spell-check="true">
+                <expression>--(.*)$</expression>
+            </scope>
+            <scope name="literate-haskell.comment.block" spell-check="true">
+                <starts-with>
+                    <expression>{-</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>-}</expression>
+                </ends-with>
+            </scope>
+        </collection>
+
+
+        <!-- Strings -->
+        <collection name="strings">
+            <scope name="literate-haskell.string.double-quoted">
+                <expression>"([^\\"]|\\.)*"</expression>
+            </scope>
+            <scope name="literate-haskell.string.single-quoted">
+                <expression>'([^'\\]|\\.)'</expression>
+            </scope>
+        </collection>
+
+
+        <!-- Keywords -->
+        <collection name="keywords">
+            <scope name="literate-haskell.keyword">
+                <strings>
+                    <string>case</string>
+                    <string>class</string>
+                    <string>data</string>
+                    <string>deriving</string>
+                    <string>do</string>
+                    <string>else</string>
+                    <string>if</string>
+                    <string>import</string>
+                    <string>in</string>
+                    <string>infix</string>
+                    <string>infixl</string>
+                    <string>infixr</string>
+                    <string>instance</string>
+                    <string>let</string>
+                    <string>of</string>
+                    <string>module</string>
+                    <string>newtype</string>
+                    <string>then</string>
+                    <string>type</string>
+                    <string>undefined</string>
+                    <string>where</string>
+                </strings>
+            </scope>
+        </collection>
+    </collections>
+
+</syntax>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <provider>
+        <syntax>haskell</syntax>
+        <selector>haskell</selector>
+        <expression>\b[a-zA-Z0-9-_]*</expression>
+        <set>haskell.keywords</set>
+        <set>haskell.prelude.functions</set>
+        <set>haskell.prelude.methods</set>
+        <set>haskell.prelude.types</set>
+        <set>haskell.prelude.constructors</set>
+        <symbols type="function" />
+        <symbols type="type" />
+        <symbols type="class" />
+    </provider>
+
+    <set name="haskell.keywords">
+        <completion string="case" symbol="keyword" />
+        <completion string="class" symbol="keyword" />
+        <completion string="data" symbol="keyword" />
+        <completion string="deriving" symbol="keyword" />
+        <completion string="do" symbol="keyword" />
+        <completion string="else" symbol="keyword" />
+        <completion string="if" symbol="keyword" />
+        <completion string="import" symbol="keyword" />
+        <completion string="in" symbol="keyword" />
+        <completion string="infix" symbol="keyword" />
+        <completion string="infixl" symbol="keyword" />
+        <completion string="infixr" symbol="keyword" />
+        <completion string="instance" symbol="keyword" />
+        <completion string="let" symbol="keyword" />
+        <completion string="of" symbol="keyword" />
+        <completion string="module" symbol="keyword" />
+        <completion string="newtype" symbol="keyword" />
+        <completion string="then" symbol="keyword" />
+        <completion string="type" symbol="keyword" />
+        <completion string="where" symbol="keyword" />
+    </set>
+
+    <set name="haskell.prelude.functions">
+        <completion string="||" symbol="function" />
+        <completion string="!!" symbol="function" />
+        <completion string="$" symbol="function" />
+        <completion string="$!" symbol="function" />
+        <completion string="&amp;&amp;" symbol="function" />
+        <completion string="++" symbol="function" />
+        <completion string="." symbol="function" />
+        <completion string="&amp;lt;$&gt;" symbol="function" />
+        <completion string="=&lt;&lt;" symbol="function" />
+        <completion string="^" symbol="function" />
+        <completion string="^^" symbol="function" />
+        <completion string="all" symbol="function" />
+        <completion string="and" symbol="function" />
+        <completion string="any" symbol="function" />
+        <completion string="appendFile" symbol="function" />
+        <completion string="asTypeOf" symbol="function" />
+        <completion string="break" symbol="function" />
+        <completion string="concat" symbol="function" />
+        <completion string="concatMap" symbol="function" />
+        <completion string="const" symbol="function" />
+        <completion string="curry" symbol="function" />
+        <completion string="cycle" symbol="function" />
+        <completion string="drop" symbol="function" />
+        <completion string="dropWhile" symbol="function" />
+        <completion string="either" symbol="function" />
+        <completion string="error" symbol="function" />
+        <completion string="errorWithoutStackTrace" symbol="function" />
+        <completion string="even" symbol="function" />
+        <completion string="filter" symbol="function" />
+        <completion string="flip" symbol="function" />
+        <completion string="fromIntegral" symbol="function" />
+        <completion string="fst" symbol="function" />
+        <completion string="gcd" symbol="function" />
+        <completion string="getChar" symbol="function" />
+        <completion string="getContents" symbol="function" />
+        <completion string="getLine" symbol="function" />
+        <completion string="head" symbol="function" />
+        <completion string="id" symbol="function" />
+        <completion string="init" symbol="function" />
+        <completion string="interact" symbol="function" />
+        <completion string="ioError" symbol="function" />
+        <completion string="iterate" symbol="function" />
+        <completion string="last" symbol="function" />
+        <completion string="lcm" symbol="function" />
+        <completion string="lex" symbol="function" />
+        <completion string="lines" symbol="function" />
+        <completion string="lookup" symbol="function" />
+        <completion string="map" symbol="function" />
+        <completion string="mapM_" symbol="function" />
+        <completion string="maybe" symbol="function" />
+        <completion string="not" symbol="function" />
+        <completion string="notElem" symbol="function" />
+        <completion string="odd" symbol="function" />
+        <completion string="or" symbol="function" />
+        <completion string="otherwise" symbol="function" />
+        <completion string="print" symbol="function" />
+        <completion string="putChar" symbol="function" />
+        <completion string="putStr" symbol="function" />
+        <completion string="putStrLn" symbol="function" />
+        <completion string="read" symbol="function" />
+        <completion string="readFile" symbol="function" />
+        <completion string="readIO" symbol="function" />
+        <completion string="readLn" symbol="function" />
+        <completion string="readParen" symbol="function" />
+        <completion string="reads" symbol="function" />
+        <completion string="realToFrac" symbol="function" />
+        <completion string="repeat" symbol="function" />
+        <completion string="replicate" symbol="function" />
+        <completion string="reverse" symbol="function" />
+        <completion string="scanl" symbol="function" />
+        <completion string="scanl1" symbol="function" />
+        <completion string="scanr" symbol="function" />
+        <completion string="scanr1" symbol="function" />
+        <completion string="seq" symbol="function" />
+        <completion string="sequence_" symbol="function" />
+        <completion string="showChar" symbol="function" />
+        <completion string="showParen" symbol="function" />
+        <completion string="showString" symbol="function" />
+        <completion string="shows" symbol="function" />
+        <completion string="snd" symbol="function" />
+        <completion string="span" symbol="function" />
+        <completion string="splitAt" symbol="function" />
+        <completion string="subtract" symbol="function" />
+        <completion string="tail" symbol="function" />
+        <completion string="take" symbol="function" />
+        <completion string="takeWhile" symbol="function" />
+        <completion string="uncurry" symbol="function" />
+        <completion string="undefined" symbol="function" />
+        <completion string="unlines" symbol="function" />
+        <completion string="until" symbol="function" />
+        <completion string="unwords" symbol="function" />
+        <completion string="unzip" symbol="function" />
+        <completion string="unzip3" symbol="function" />
+        <completion string="userError" symbol="function" />
+        <completion string="words" symbol="function" />
+        <completion string="writeFile" symbol="function" />
+        <completion string="zip" symbol="function" />
+        <completion string="zip3" symbol="function" />
+        <completion string="zipWith" symbol="function" />
+        <completion string="zipWith3" symbol="function" />
+    </set>
+
+    <set name="haskell.prelude.methods">
+        <completion string="&gt;" symbol="method" />
+        <completion string="&gt;&gt;" symbol="method" />
+        <completion string="&gt;&gt;=" symbol="method" />
+        <completion string="&gt;=" symbol="method" />
+        <completion string="&lt;" symbol="method" />
+        <completion string="&lt;$" symbol="method" />
+        <completion string="&lt;&gt;" symbol="method" />
+        <completion string="&lt;*" symbol="method" />
+        <completion string="&lt;*&gt;" symbol="method" />
+        <completion string="&lt;=" symbol="method" />
+        <completion string="*" symbol="method" />
+        <completion string="*&gt;" symbol="method" />
+        <completion string="**" symbol="method" />
+        <completion string="+" symbol="method" />
+        <completion string="-" symbol="method" />
+        <completion string="/" symbol="method" />
+        <completion string="/=" symbol="method" />
+        <completion string="==" symbol="method" />
+        <completion string="abs" symbol="method" />
+        <completion string="acos" symbol="method" />
+        <completion string="acosh" symbol="method" />
+        <completion string="asin" symbol="method" />
+        <completion string="asinh" symbol="method" />
+        <completion string="atan" symbol="method" />
+        <completion string="atan2" symbol="method" />
+        <completion string="atanh" symbol="method" />
+        <completion string="ceiling" symbol="method" />
+        <completion string="compare" symbol="method" />
+        <completion string="cos" symbol="method" />
+        <completion string="cosh" symbol="method" />
+        <completion string="decodeFloat" symbol="method" />
+        <completion string="div" symbol="method" />
+        <completion string="divMod" symbol="method" />
+        <completion string="elem" symbol="method" />
+        <completion string="encodeFloat" symbol="method" />
+        <completion string="enumFrom" symbol="method" />
+        <completion string="enumFromThen" symbol="method" />
+        <completion string="enumFromThenTo" symbol="method" />
+        <completion string="enumFromTo" symbol="method" />
+        <completion string="exp" symbol="method" />
+        <completion string="expm1" symbol="method" />
+        <completion string="exponent" symbol="method" />
+        <completion string="fail" symbol="method" />
+        <completion string="floatDigits" symbol="method" />
+        <completion string="floatRadix" symbol="method" />
+        <completion string="floatRange" symbol="method" />
+        <completion string="floor" symbol="method" />
+        <completion string="fmap" symbol="method" />
+        <completion string="fold" symbol="method" />
+        <completion string="foldMap" symbol="method" />
+        <completion string="foldMap'" symbol="method" />
+        <completion string="foldl" symbol="method" />
+        <completion string="foldl'" symbol="method" />
+        <completion string="foldl1" symbol="method" />
+        <completion string="foldr" symbol="method" />
+        <completion string="foldr'" symbol="method" />
+        <completion string="foldr1" symbol="method" />
+        <completion string="fromEnum" symbol="method" />
+        <completion string="fromInteger" symbol="method" />
+        <completion string="fromRational" symbol="method" />
+        <completion string="isDenormalized" symbol="method" />
+        <completion string="isIEEE" symbol="method" />
+        <completion string="isInfinite" symbol="method" />
+        <completion string="isNaN" symbol="method" />
+        <completion string="isNegativeZero" symbol="method" />
+        <completion string="length" symbol="method" />
+        <completion string="liftA2" symbol="method" />
+        <completion string="log" symbol="method" />
+        <completion string="log1mexp" symbol="method" />
+        <completion string="log1p" symbol="method" />
+        <completion string="log1pexp" symbol="method" />
+        <completion string="logBase" symbol="method" />
+        <completion string="mapM" symbol="method" />
+        <completion string="mappend" symbol="method" />
+        <completion string="max" symbol="method" />
+        <completion string="maxBound" symbol="method" />
+        <completion string="maximum" symbol="method" />
+        <completion string="mconcat" symbol="method" />
+        <completion string="mempty" symbol="method" />
+        <completion string="min" symbol="method" />
+        <completion string="minBound" symbol="method" />
+        <completion string="minimum" symbol="method" />
+        <completion string="mod" symbol="method" />
+        <completion string="negate" symbol="method" />
+        <completion string="null" symbol="method" />
+        <completion string="pi" symbol="method" />
+        <completion string="pred" symbol="method" />
+        <completion string="product" symbol="method" />
+        <completion string="properFraction" symbol="method" />
+        <completion string="pure" symbol="method" />
+        <completion string="quot" symbol="method" />
+        <completion string="quotRem" symbol="method" />
+        <completion string="readList" symbol="method" />
+        <completion string="readListPrec" symbol="method" />
+        <completion string="readPrec" symbol="method" />
+        <completion string="readsPrec" symbol="method" />
+        <completion string="recip" symbol="method" />
+        <completion string="rem" symbol="method" />
+        <completion string="return" symbol="method" />
+        <completion string="round" symbol="method" />
+        <completion string="scaleFloat" symbol="method" />
+        <completion string="sconcat" symbol="method" />
+        <completion string="sequence" symbol="method" />
+        <completion string="sequenceA" symbol="method" />
+        <completion string="show" symbol="method" />
+        <completion string="showList" symbol="method" />
+        <completion string="showsPrec" symbol="method" />
+        <completion string="significand" symbol="method" />
+        <completion string="signum" symbol="method" />
+        <completion string="sin" symbol="method" />
+        <completion string="sinh" symbol="method" />
+        <completion string="sqrt" symbol="method" />
+        <completion string="stimes" symbol="method" />
+        <completion string="succ" symbol="method" />
+        <completion string="sum" symbol="method" />
+        <completion string="tan" symbol="method" />
+        <completion string="tanh" symbol="method" />
+        <completion string="toEnum" symbol="method" />
+        <completion string="toInteger" symbol="method" />
+        <completion string="toList" symbol="method" />
+        <completion string="toRational" symbol="method" />
+        <completion string="traverse" symbol="method" />
+        <completion string="truncate" symbol="method" />
+    </set>
+
+    <set name="haskell.prelude.types">
+        <completion string="Applicative" symbol="type" />
+        <completion string="Bool" symbol="type" />
+        <completion string="Bounded" symbol="type" />
+        <completion string="Char" symbol="type" />
+        <completion string="Double" symbol="type" />
+        <completion string="Either" symbol="type" />
+        <completion string="Enum" symbol="type" />
+        <completion string="Eq" symbol="type" />
+        <completion string="FilePath" symbol="type" />
+        <completion string="Float" symbol="type" />
+        <completion string="Floating" symbol="type" />
+        <completion string="Foldable" symbol="type" />
+        <completion string="Fractional" symbol="type" />
+        <completion string="Functor" symbol="type" />
+        <completion string="IO" symbol="type" />
+        <completion string="IOError" symbol="type" />
+        <completion string="Int" symbol="type" />
+        <completion string="Integer" symbol="type" />
+        <completion string="Integral" symbol="type" />
+        <completion string="Maybe" symbol="type" />
+        <completion string="Monad" symbol="type" />
+        <completion string="MonadFail" symbol="type" />
+        <completion string="Monoid" symbol="type" />
+        <completion string="Num" symbol="type" />
+        <completion string="Ord" symbol="type" />
+        <completion string="Ordering" symbol="type" />
+        <completion string="Rational" symbol="type" />
+        <completion string="Read" symbol="type" />
+        <completion string="ReadS" symbol="type" />
+        <completion string="Real" symbol="type" />
+        <completion string="RealFloat" symbol="type" />
+        <completion string="RealFrac" symbol="type" />
+        <completion string="Semigroup" symbol="type" />
+        <completion string="Show" symbol="type" />
+        <completion string="ShowS" symbol="type" />
+        <completion string="String" symbol="type" />
+        <completion string="Traversable" symbol="type" />
+        <completion string="Word" symbol="type" />
+    </set>
+
+    <set name="haskell.prelude.constructors">
+        <completion string="False" symbol="constant" />
+        <completion string="True" symbol="constant" />
+        <completion string="Just" symbol="constant" />
+        <completion string="Nothing" symbol="constant" />
+        <completion string="Left" symbol="constant" />
+        <completion string="Right" symbol="constant" />
+        <completion string="LT" symbol="constant" />
+        <completion string="EQ" symbol="constant" />
+        <completion string="GT" symbol="constant" />
+    </set>
+</completions>

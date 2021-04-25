@@ -1,0 +1,12 @@
+{
+    "identifier": "org.soi2.Haskell",
+    "name": "Haskell",
+    "organization": "Michael Lee",
+    "description": "Haskell syntax highlighting and completion.",
+    "version": "0.1",
+    "categories": ["languages"],
+    "license": "MIT",
+    "bugs" : {
+        "email": "lee@soi2.org"
+    }
+}
