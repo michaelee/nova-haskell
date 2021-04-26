@@ -3,7 +3,7 @@
     "name": "Haskell",
     "organization": "Michael Lee",
     "description": "Haskell syntax highlighting and completion.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "categories": ["languages"],
     "license": "MIT",
     "repository": "https://github.com/michaelee/nova-haskell",

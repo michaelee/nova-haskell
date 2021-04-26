@@ -65,11 +65,7 @@
                 <ends-with>
                     <expression>^\\end{code}</expression>
                 </ends-with>
-                <subscopes>
-                    <include syntax="self" collection="keywords"/>
-                    <include syntax="self" collection="comments"/>
-                    <include syntax="self" collection="strings" />
-                </subscopes>
+                <subsyntax name="haskell" />
             </scope>
 
         </collection>
